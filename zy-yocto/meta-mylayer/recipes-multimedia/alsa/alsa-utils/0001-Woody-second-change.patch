@@ -1,0 +1,21 @@
+From 75ad098c808e151c0471307939aa924c88c05603 Mon Sep 17 00:00:00 2001
+From: JYuwoody <zx0935697850@gmail.com>
+Date: Wed, 25 Oct 2023 08:57:57 -0700
+Subject: [PATCH] Woody second change
+
+---
+ alsamixer/cli.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/alsamixer/cli.c b/alsamixer/cli.c
+index 2551f95..3be3645 100644
+--- a/alsamixer/cli.c
++++ b/alsamixer/cli.c
+@@ -42,6 +42,7 @@ static void show_help(void)
+ {
+ 	puts(_("Usage: alsamixer [options]"));
+ 	puts(_("Woody first change"));
++	puts(_("Woody second change"));
+ 	puts(_("Useful options:\n"
+ 	       "  -h, --help              this help\n"
+ 	       "  -c, --card=NUMBER       sound card number or id\n"

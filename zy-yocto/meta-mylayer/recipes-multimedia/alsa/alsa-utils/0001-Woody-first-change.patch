@@ -1,0 +1,21 @@
+From c19c2e4b73d2a66097fec2ed6dc25c2bbb676a75 Mon Sep 17 00:00:00 2001
+From: JYuwoody <zx0935697850@gmail.com>
+Date: Wed, 25 Oct 2023 08:48:40 -0700
+Subject: [PATCH] Woody first change
+
+---
+ alsamixer/cli.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/alsamixer/cli.c b/alsamixer/cli.c
+index 63c4949..2551f95 100644
+--- a/alsamixer/cli.c
++++ b/alsamixer/cli.c
+@@ -41,6 +41,7 @@ static struct snd_mixer_selem_regopt selem_regopt = {
+ static void show_help(void)
+ {
+ 	puts(_("Usage: alsamixer [options]"));
++	puts(_("Woody first change"));
+ 	puts(_("Useful options:\n"
+ 	       "  -h, --help              this help\n"
+ 	       "  -c, --card=NUMBER       sound card number or id\n"

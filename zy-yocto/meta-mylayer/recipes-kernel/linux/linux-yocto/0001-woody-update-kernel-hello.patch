@@ -1,0 +1,21 @@
+From 5bc377ce60f3c9c1ae7f90d88575b9d96323b45f Mon Sep 17 00:00:00 2001
+From: JYuwoody <zx0935697850@gmail.com>
+Date: Sun, 29 Oct 2023 08:10:14 -0700
+Subject: [PATCH] woody update kernel hello
+
+---
+ init/calibrate.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/init/calibrate.c b/init/calibrate.c
+index f3831272f113..25888640c9fb 100644
+--- a/init/calibrate.c
++++ b/init/calibrate.c
+@@ -277,6 +277,7 @@ void calibrate_delay(void)
+ 	unsigned long lpj;
+ 	static bool printed;
+ 	int this_cpu = smp_processor_id();
++	printk(KERN_NOTICE "***Hello YOCTO KERNEL WOODY***\n");
+ 
+ 	if (per_cpu(cpu_loops_per_jiffy, this_cpu)) {
+ 		lpj = per_cpu(cpu_loops_per_jiffy, this_cpu);
